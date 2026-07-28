@@ -33,8 +33,16 @@ LINEミニアプリ認証・LINEヤフー広告審査 対応のランディン�
 ## 公開前に必ずやること（TODO）
 
 1. ~~**ミニアプリ起動リンクの差し替え**~~（2026-07-28 対応済み）
-   - `index.html` の4箇所（`data-miniapp` 属性付き）を `https://liff.line.me/2010663646-v9xATzY1` に置換済み
-   - `miniapp.line.me/2010663646-v9xATzY1` は 404 を返すため、`liff.line.me` 形式を使うこと
+   - `index.html` の4箇所（`data-miniapp` 属性付き）を `https://app.satei-now.com/t/lp` に置換済み
+   - これは L Harness のトラッキングリンク。クリック数を計測しつつ
+     査定ナウ ミニアプリ `https://miniapp.line.me/2010624141-BPs33XiS` へ転送する
+   - クリックした友だちには「LP経由」タグが自動付与される
+   - **査定ナウには2つのアプリがある**ので混同しないこと：
+     | | ID | 実体 |
+     |---|---|---|
+     | 査定ナウ ミニアプリ（本体） | `2010624141-BPs33XiS` | Vercel (satei-now-user.vercel.app) |
+     | L Harness の友だち追加/予約LIFF | `2010663646-v9xATzY1` | Cloudflare Workers (app.satei-now.com) |
+   - 転送先を変えるときは HTML ではなく L Harness 側のリンク設定を変更する
 2. ~~**本番ドメインで公開**し、`index.html` の canonical / og:url を設定~~（2026-07-28 対応済み）
    - 本番ドメイン：`https://satei-now.com/`（Xサーバーで配信。DNSはCloudflare管理）
    - canonical / og:url / og:image を設定済み
