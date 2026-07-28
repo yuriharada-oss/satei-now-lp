@@ -10,9 +10,16 @@
       name="description"
       content="査定ナウは、LINEでお品物の写真を送るだけでブランド品・貴金属・時計の買取査定ができるサービスです。概算金額のご案内から来店予約・出張買取のお申込みまでLINEで完結。査定料・出張料は無料です。運営：株式会社ハチナナ（買取大吉 都立大学店・世田谷奥沢店）"
     />
-    <!-- TODO(公開前): 本番ドメイン確定後に canonical / og:url を設定すること -->
-    <!-- <link rel="canonical" href="https://＜本番ドメイン＞/" /> -->
+    <link rel="canonical" href="https://satei-now.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://satei-now.com/" />
+    <!-- OGP画像は webp 非対応クローラ(LINE/X/Facebook)があるため png のまま使用する -->
+    <meta
+      property="og:image"
+      content="https://satei-now.com/assets/imgs/opg-img.png"
+    />
+    <meta property="og:image:width" content="1254" />
+    <meta property="og:image:height" content="1254" />
     <meta
       property="og:title"
       content="査定ナウ｜LINEで写真を送るだけ。ブランド品・貴金属・時計の買取査定"
@@ -23,7 +30,7 @@
     />
     <meta property="og:site_name" content="査定ナウ" />
     <meta property="og:locale" content="ja_JP" />
-    <link rel="icon" type="image/png" href="assets/imgs/satei-now-logo.png" />
+    <link rel="icon" type="image/webp" href="assets/imgs/satei-now-logo.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -51,9 +58,9 @@
   <body>
     <!--
     ============================================================
-    TODO(公開前・必須): ミニアプリ起動リンクを本番URLに差し替える
-    下記 data-miniapp のプレースホルダ URL を、LINEミニアプリの
-    本番 URL (https://miniapp.line.me/XXXX... ) に置換すること。
+    ミニアプリ起動リンク (data-miniapp 属性付き・4箇所)
+    LIFF ID: 2010663646-v9xATzY1
+    miniapp.line.me 形式は 404 を返すため liff.line.me を使用する。
     ============================================================
   -->
 
@@ -61,7 +68,7 @@
       <div class="site-header__inner">
         <a class="site-header__brand" href="#top">
           <img
-            src="assets/imgs/satei-now-logo.png"
+            src="assets/imgs/satei-now-logo.webp"
             alt="査定ナウ ロゴ"
             width="34"
             height="34"
@@ -70,7 +77,7 @@
         </a>
         <a
           class="site-header__cta"
-          href="https://miniapp.line.me/XXXXXXXXXX-XXXXXXXX"
+          href="https://liff.line.me/2010663646-v9xATzY1"
           data-miniapp
           >LINEで無料査定</a
         >
@@ -106,7 +113,7 @@
               </span>
               <img
                 class="mascot-stage__img"
-                src="assets/imgs/mascot.png"
+                src="assets/imgs/mascot.webp"
                 alt=""
                 width="210"
                 height="210"
@@ -115,7 +122,7 @@
             </div>
             <a
               class="cta-btn cta-btn--line"
-              href="https://miniapp.line.me/XXXXXXXXXX-XXXXXXXX"
+              href="https://liff.line.me/2010663646-v9xATzY1"
               data-miniapp
             >
               <svg class="line-ico" viewBox="0 0 24 24" aria-hidden="true">
@@ -215,7 +222,7 @@
               <img
                 class="mascot-stage__img"
                 id="mascotImg"
-                src="assets/imgs/mascot.png"
+                src="assets/imgs/mascot.webp"
                 alt="査定ナウ公式キャラクター サティ"
                 width="340"
                 height="340"
@@ -251,7 +258,7 @@
               </p>
               <div class="step-card__shot">
                 <img
-                  src="assets/imgs/app-step1.png"
+                  src="assets/imgs/app-step1.webp"
                   alt="査定ナウの画面：お品物の写真を登録"
                   loading="lazy"
                 />
@@ -265,7 +272,7 @@
               </p>
               <div class="step-card__shot">
                 <img
-                  src="assets/imgs/app-step2.png"
+                  src="assets/imgs/app-step2.webp"
                   alt="査定ナウの画面：概算査定額のお知らせ"
                   loading="lazy"
                 />
@@ -279,7 +286,7 @@
               </p>
               <div class="step-card__shot">
                 <img
-                  src="assets/imgs/app-step3.png"
+                  src="assets/imgs/app-step3.webp"
                   alt="査定ナウの画面：来店予約・出張買取の申込み"
                   loading="lazy"
                 />
@@ -293,7 +300,7 @@
               </p>
               <div class="step-card__shot step-card__shot--mascot">
                 <img
-                  src="assets/imgs/mascot-cash.png"
+                  src="assets/imgs/mascot-cash.webp"
                   alt="現金の束を持つ査定ナウ公式キャラクター サティ"
                   loading="lazy"
                 />
@@ -567,7 +574,7 @@
         <div class="wrap">
           <img
             class="bottom-cta__mascot reveal"
-            src="assets/imgs/mascot-jump.png"
+            src="assets/imgs/mascot-jump.webp"
             alt=""
             loading="lazy"
           />
@@ -577,7 +584,7 @@
           </p>
           <a
             class="cta-btn"
-            href="https://miniapp.line.me/XXXXXXXXXX-XXXXXXXX"
+            href="https://liff.line.me/2010663646-v9xATzY1"
             data-miniapp
           >
             <svg class="line-ico" viewBox="0 0 24 24" aria-hidden="true">
@@ -614,7 +621,7 @@
     <div class="fixed-cta">
       <a
         class="cta-btn cta-btn--line"
-        href="https://miniapp.line.me/XXXXXXXXXX-XXXXXXXX"
+        href="https://liff.line.me/2010663646-v9xATzY1"
         data-miniapp
       >
         <svg class="line-ico" viewBox="0 0 24 24" aria-hidden="true">
